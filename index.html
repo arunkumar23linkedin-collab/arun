@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Immersive portfolio experience for Arun Kumar — developer, creator, gamer, and lifelong learner." />
+    <title>Arun Kumar | Digital Universe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading-screen" class="loading-screen" aria-live="polite">
+      <div class="loading-orb"></div>
+      <div class="loading-content">
+        <div class="logo-mark">A</div>
+        <h2>Arun Kumar</h2>
+        <p>Preparing your experience</p>
+        <div class="progress-track">
+          <div id="loading-bar" class="progress-bar"></div>
+        </div>
+        <span id="loading-percent" class="loading-percent">0%</span>
+      </div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <audio id="bg-music" preload="auto" loop hidden>
+      <source src="assets/music.mp3.MP3" type="audio/mpeg" />
+    </audio>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <a href="#hero" class="brand">AK</a>
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#social">Social</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" data-tooltip="Play Music" title="Play Music">
+            <i class="fa-solid fa-music"></i>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hero" class="hero-section reveal">
+          <div class="hero-stage" aria-hidden="true">
+            <div class="ambient ambient-one"></div>
+            <div class="ambient ambient-two"></div>
+            <div class="ambient ambient-three"></div>
+            <div class="particle-layer" id="particle-layer"></div>
+            <div class="star-grid"></div>
+          </div>
+
+          <div class="hero-content">
+            <p class="eyebrow">Interactive Portfolio • Digital Universe</p>
+            <h1 class="hero-title">
+              <span id="typing-line-1" class="type-line"></span>
+              <span id="typing-line-2" class="type-line"></span>
+              <span id="typing-line-3" class="type-line"></span>
+            </h1>
+            <p class="hero-subtitle">Every project tells a story. Every scroll reveals a new chapter.</p>
+            <div class="hero-actions">
+              <a class="button primary magnetic" href="#about">Explore My Universe ↓</a>
+            </div>
+            <div class="scroll-indicator" aria-label="Scroll down">
+              <span></span>
+              <small>Scroll</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about-section section-space">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About the Creator</p>
+            <h2>Crafting bold ideas with curiosity and calm intensity.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="photo-card reveal">
+              <div class="photo-stage" aria-label="Anime background video">
+                <video id="about-video" class="about-video" autoplay muted loop playsinline preload="metadata" aria-label="Background anime video">
+                  <source src="assets/anime.mp4" type="video/mp4" />
+                </video>
+                <div class="video-overlay" aria-hidden="true"></div>
+                <div class="profile-avatar-frame">
+                  <img src="assets/profile.png" alt="Portrait of Arun Kumar" />
+                </div>
+              </div>
+            </div>
+
+            <div class="about-copy reveal">
+              <p>
+                I’m Arun Kumar — a young developer, creator, gamer, and lifelong learner who believes beautiful experiences should feel effortless, emotional, and memorable.
+              </p>
+              <p>
+                I spend my time building websites, shaping Roblox experiences, exploring new tools, and turning ideas into immersive digital spaces that connect with people.
+              </p>
+              <div class="interest-grid">
+                <article class="interest-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>Website Development</h3>
+                </article>
+                <article class="interest-card">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <h3>Roblox Development</h3>
+                </article>
+                <article class="interest-card">
+                  <i class="fa-solid fa-palette"></i>
+                  <h3>UI Design</h3>
+                </article>
+                <article class="interest-card">
+                  <i class="fa-solid fa-rocket"></i>
+                  <h3>Technology Exploration</h3>
+                </article>
+                <article class="interest-card">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <h3>Creative Problem Solving</h3>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="social" class="social-section section-space">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Social Universe</p>
+            <h2>Where ideas travel beyond the screen.</h2>
+          </div>
+
+          <div class="social-grid">
+            <article class="social-card reveal instagram-card">
+              <div class="social-avatar">
+                <img src="assets/instagram.webp" alt="Instagram profile" />
+              </div>
+              <div class="social-body">
+                <p class="social-handle">Instagram</p>
+                <p>Visual stories, aesthetic ideas, and daily inspiration.</p>
+                <a href="https://www.instagram.com/_arun_0823?igsh=ajlwOXY1ZXo4Y2Fz" target="_blank" rel="noopener noreferrer" class="social-action">Visit Profile</a>
+              </div>
+            </article>
+
+            <article class="social-card reveal roblox-card">
+              <div class="social-avatar large-avatar">
+                <img src="assets/profile1.jpeg" alt="Roblox avatar" />
+              </div>
+              <div class="social-body">
+                <p class="social-handle">Roblox</p>
+                <p>Immersive worlds, playful systems, and interactive spaces.</p>
+                <a href="https://www.roblox.com/share?code=dc8d5a6535fc5a418809140294c9ef12&type=Profile&source=ProfileShare&stamp=1782482781854" target="_blank" rel="noopener noreferrer" class="social-action">Open Roblox</a>
+              </div>
+            </article>
+
+            <article class="social-card reveal github-card">
+              <div class="social-avatar">
+                <img src="assets/github-card.136da79a.jpg" alt="GitHub profile" />
+              </div>
+              <div class="social-body">
+                <p class="social-handle">GitHub</p>
+                <p>Projects, experiments, and code that keeps evolving.</p>
+                <a href="https://github.com/arunkumar23linkedin-collab" target="_blank" rel="noopener noreferrer" class="social-action">View GitHub</a>
+              </div>
+            </article>
+
+            <article class="social-card reveal youtube-card">
+              <div class="social-avatar">
+                <img src="assets/youtube1.jpg" alt="YouTube channel" />
+              </div>
+              <div class="social-body">
+                <p class="social-handle">YouTube</p>
+                <p>Short-form stories, build logs, and creative explorations.</p>
+                <a href="https://www.youtube.com/@tgdevilff4495" target="_blank" rel="noopener noreferrer" class="social-action">Watch Channel</a>
+              </div>
+            </article>
+
+            <article class="social-card reveal discord-card">
+              <div class="social-avatar"><i class="fa-brands fa-discord"></i></div>
+              <div class="social-body">
+                <p class="social-handle">Discord</p>
+                <p>Builds, ideas, and community conversations in motion.</p>
+                <a href="http://discordapp.com/users/833591606107701259" target="_blank" rel="noopener noreferrer" class="social-action">Open Discord</a>
+              </div>
+            </article>
+
+            <article class="social-card reveal linkedin-card">
+    <div class="social-avatar">
+        <img src="assets/download.png" alt="LinkedIn Profile">
+    </div>
+
+<div class="social-body">
+    <p class="social-handle">LinkedIn</p>
+    <p>Professional profile, projects, certifications, and career updates.</p>
+
+    <a href="NOT UPDATED YET"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-action">
+       View LinkedIn
+    </a>
+</div>
+
+
+</article>
+
+
+            <article class="social-card reveal email-card">
+              <div class="social-avatar"><i class="fa-solid fa-envelope"></i></div>
+              <div class="social-body">
+                <p class="social-handle">Email</p>
+                <p>For projects, collaborations, or a quick hello.</p>
+                <a href="mailto:arunkumar.edu23@gmail.com" class="social-action">Say Hi</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="skills-section section-space">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Core Skills</p>
+            <h2>Combining design, code, and storytelling in every build.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 0; --accent: #7c3aed;"><span>0%</span></div>
+              <h3>HTML</h3>
+              <p>Semantic structure and meaningful content systems.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 0; --accent: #38bdf8;"><span>0%</span></div>
+              <h3>CSS</h3>
+              <p>Premium visuals with responsive detail and polish.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 0; --accent: #f59e0b;"><span>0%</span></div>
+              <h3>JavaScript</h3>
+              <p>Interactive logic, motion, and seamless behavior.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 50; --accent: #ec4899;"><span>50%</span></div>
+              <h3>UI Design</h3>
+              <p>Elegant interfaces with clarity and emotional tone.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 40; --accent: #22c55e;"><span>40%</span></div>
+              <h3>Roblox Studio</h3>
+              <p>Immersive worlds and interactive mechanics.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 20; --accent: #fb7185;"><span>20%</span></div>
+              <h3>Photoshop</h3>
+              <p>Refining visuals for social and product storytelling.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 45; --accent: #a78bfa;"><span>45%</span></div>
+              <h3>Video Editing</h3>
+              <p>Dynamic montages and visual pacing with purpose.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 35; --accent: #4f46e5;"><span>35%</span></div>
+              <h3>Git & GitHub</h3>
+              <p>Clean version control and collaborative delivery.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 60; --accent: #0ea5e9;"><span>60%</span></div>
+              <h3>Responsive Web Design</h3>
+              <p>Thoughtful experiences across every screen size.</p>
+            </article>
+            <article class="skill-card reveal">
+              <div class="ring" style="--value: 60; --accent: #14b8a6;"><span>60%</span></div>
+              <h3>Front-End Development</h3>
+              <p>Performance, polish, and thoughtful user journeys.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="projects-section section-space">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected Projects</p>
+            <h2>Experiments, experiences, and polished digital work.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <img src="assets/viking.png.jpeg" alt="Preview of a futuristic website project" />
+              <div class="project-content">
+                <div class="badge-row">
+                  <span>Website</span><span>UI/UX</span><span>GSAP</span>
+                </div>
+                <h3>VikingGunalan – Wholesale Distributor Management Website</h3>
+                <p>**VikingGunalan** is a modern wholesale distributor website built for a Viking sales organizer. It features a responsive design, product catalog, pricing, WhatsApp ordering, contact page, and is designed to support future admin features such as product management and order tracking.
+</p>
+                <div class="project-actions">
+                  <a href="#" class="button secondary">Live Demo</a>
+                  <a href="#" class="button ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="assets/project-2.svg" alt="Preview of a Roblox-inspired project" />
+              <div class="project-content">
+                <div class="badge-row">
+                  <span>Roblox</span><span>Game Design</span><span>Lua</span>
+                </div>
+                <h3>Skybound Arena</h3>
+                <p>An interactive multiplayer experience with polished flow state, progression, and atmosphere.</p>
+                <div class="project-actions">
+                  <a href="#" class="button secondary">Live Demo</a>
+                  <a href="#" class="button ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="assets/project-3.svg" alt="Preview of a futuristic portfolio concept" />
+              <div class="project-content">
+                <div class="badge-row">
+                  <span>Portfolio</span><span>Front-End</span><span>Animation</span>
+                </div>
+                <h3>Futureframe Portfolio</h3>
+                <p>A premium online presence designed to feel like stepping into a living, breathing story.</p>
+                <div class="project-actions">
+                  <a href="#" class="button secondary">Live Demo</a>
+                  <a href="#" class="button ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="journey" class="timeline-section section-space">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The Journey</p>
+            <h2>From curiosity to craft, one chapter at a time.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <p class="timeline-year">2019</p>
+                <h3>First Steps in Code</h3>
+                <p>Learning the basics, building tiny ideas, and discovering the joy of creating things from scratch.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <p class="timeline-year">2021</p>
+                <h3>Web Design and Front-End Growth</h3>
+                <p>Designing interfaces, understanding modern UX, and turning visual ideas into responsive experiences.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <p class="timeline-year">2022</p>
+                <h3>Roblox Experiences</h3>
+                <p>Building playful worlds and interactive systems that felt alive, social, and full of personality.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <p class="timeline-year">2024</p>
+                <h3>Freelance & Creative Direction</h3>
+                <p>Creating polished work for clients and personal projects, with a stronger focus on immersive storytelling.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <p class="timeline-year">Now</p>
+                <h3>Current Focus</h3>
+                <p>Building modern web experiences, refining my craft, and preparing for the next big ideas.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="quote-section section-space reveal">
+          <div class="quote-glow"></div>
+          <p>Building the future, one project at a time.</p>
+        </section>
+
+        <section id="contact" class="contact-section section-space">
+          <div class="contact-card reveal">
+            <div class="contact-copy">
+              <p class="eyebrow">Let’s Connect</p>
+              <h2>Ready to build something unforgettable?</h2>
+              <p>Whether it’s a website, a game experience, or a bold digital concept, I’d love to bring it to life.</p>
+              <div class="contact-links">
+                <a href="mailto:arunkumar.edu23@gmail.com"><i class="fa-solid fa-envelope"></i> arunkumar.edu23@gmail.com</a>
+                <a href="https://www.instagram.com/_arun_0823?igsh=ajlwOXY1ZXo4Y2Fz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="http://discordapp.com/users/833591606107701259" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="https://github.com/arunkumar23linkedin-collab" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://github.com/arunkumar23linkedin-collab" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+              </div>
+            </div>
+            <div class="contact-actions">
+              <a href="#" class="button primary">Download Resume</a>
+              <a href="mailto:arunkumar.edu23@gmail.com" class="button secondary">Send Message</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="finale-section section-space reveal">
+          <div class="finale-core">
+            <p class="eyebrow">The Journey Continues...</p>
+            <h2>Thanks for visiting my digital universe. I’m just getting started, and the best projects are still ahead.</h2>
+            <a href="#contact" class="button primary magnetic">✨ Let’s Connect</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Designed & Developed by Arun Kumar <span class="heart">❤</span></p>
+        <a href="#hero" class="back-top">Back to Top ↑</a>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+  </body>
+</html>
